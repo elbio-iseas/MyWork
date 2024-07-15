@@ -1,0 +1,21 @@
+string dept[4];
+
+	ofstream outfile;
+	outfile.open("filedemo.txt");
+
+	outfile << "Accounting\n";
+	outfile << "Human Resources\n";
+	outfile << "Personnel\n";
+	outfile << "Recruiting\n";
+
+	outfile.close();
+
+	ifstream infile;
+	infile.open("filedemo.txt");
+
+	infile >> dept[0];
+	infile >> dept[1];
+	infile >> dept[2];
+	infile >> dept[3];
+
+	infile.close();

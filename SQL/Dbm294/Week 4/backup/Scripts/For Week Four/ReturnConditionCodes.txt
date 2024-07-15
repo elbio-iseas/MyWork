@@ -1,0 +1,10 @@
+﻿                   
+                -----------------------------------------
+                Return Condition Codes of Rented Vehicles
+                -----------------------------------------
+
+                0 - Still rented 
+                1 - Dented
+                2 - Scratched
+                3 - No refilled gas tank
+                4 - Undamaged

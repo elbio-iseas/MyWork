@@ -1,0 +1,428 @@
+html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Premier Job Exercises ListBox</title>
+        <style>
+            .buttonPremierExercises, .listBoxPremierExercises 
+            {
+                display: flex;
+                justify-content: center;
+            }
+            #Button1
+            {
+                background-color: navy;
+                color:yellow;
+            }
+             #ListBox1
+            {
+                background-color: lightyellow;               
+                color: black;
+            }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <br />            
+            <br />
+            <div class="buttonPremierExercises">
+                <asp:Button id="Button1" 
+                    runat="server" 
+                    OnClick="Button1_Click" 
+                    Text="Numbers multiple of 3 or 7 between 1 and 100" 
+                    Width="353px" />
+            </div>
+            <br />            
+            <br />
+            <div class="listBoxPremierExercises">
+                <asp:ListBox id="ListBox1" 
+                    runat="server" 
+                    Height="250px" 
+                    Width="100px"></asp:ListBox>
+            </div>
+       </div>                    
+    </form>
+</body>
+</html>
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateAccount.aspx.cs" Inherits="Lesson16a.CreateAccount" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Create Account</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <p>
+                User Name:
+                <br />
+                <asp:TextBox ID="TextBoxUserName" runat="server" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidatorUserName" runat="server"
+                    ControlToValidate="TextBoxUserName"
+                    ErrorMessage="Please enter your user name." Text="!" />
+            </p>
+            <p>
+                Password:
+                <br />
+                <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" runat="server" 
+                    ControlToValidate="TextBoxPassword"
+                    ErrorMessage="Please enter your password." Text="!" />
+            </p>
+            <p>
+                Confirm Password:
+                <br />
+                <asp:TextBox ID="TextBoxConfirmPassword" runat="server" TextMode="Password" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidatorConfirmPassword" 
+                    runat="server" ControlToValidate="TextBoxConfirmPassword"
+                    ErrorMessage="Please confirm your password." Text="!" 
+                    Display="Dynamic" />
+                <asp:CompareValidator ID="CompareValidatorPassword" runat="server" 
+                    ErrorMessage="Please verify that the two passwords match."
+                    Text="!" ControlToValidate="TextBoxConfirmPassword" 
+                    ControlToCompare="TextBoxPassword" />
+            </p>
+            <hr />
+            <asp:Button ID="ButtonCreateAccount" runat="server" Text="Create Account" />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+        </div> 
+    </form>
+</body>
+</html>
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  https://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5" />
+    <httpRuntime targetFramework="4.5" />
+  </system.web>
+  <appSettings>
+      <add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+  </appSettings>
+</configuration>
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="AnotherWebFormsApp.Registration" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Registration</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <hr />
+    <form id="form1" runat="server">
+        <div>
+
+            <asp:Label ID="lblFName" 
+                Text="First Name:" 
+                runat="server" /><br />
+
+            <asp:TextBox ID="txtbxFName" 
+                autocomplete="off" 
+                columns="40" 
+                maxlength="40" 
+                runat="server" 
+                OnTextChanged="txtbxFName_TextChanged" /><br />
+
+            <asp:Label ID="lblLName" 
+                Text="Last Name:" 
+                runat="server" /><br />
+
+            <asp:TextBox ID="txtbxLName" 
+                autocomplete="off" 
+                columns="40" 
+                maxlength="40" 
+                runat="server" 
+                OnTextChanged="txtbxLName_TextChanged" /><br />
+
+            <asp:button id="btnSubmit" 
+                Text="Submit" 
+                runat="server" 
+                OnClick="btnSubmit_Click" />
+
+            <br />
+            <br />
+
+            <asp:Label ID="lblWelcome" 
+                runat="server" 
+                Font-Size="Large" 
+                ForeColor="Black" 
+                Visible="False" Font-Bold="True"></asp:Label>
+
+            <br />
+
+            <asp:RequiredFieldValidator 
+                ID="RequiredFieldValidator1"
+                ControlToValidate="txtbxFName"
+                ErrorMessage="Enter your first name please.<br />"
+                Display="Dynamic"
+                Runat="server" ForeColor="Red" Font-Italic="True" />
+
+            <asp:RequiredFieldValidator 
+                ID="RequiredFieldValidator2"
+                ControlToValidate="txtbxLName"
+                ErrorMessage="Enter your last name please.<br />"
+                Display="Dynamic"
+                Runat="server" ForeColor="Red" Font-Italic="True" />    
+
+        </div>
+    </form>
+</body>
+</html>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace AnotherWebFormsApp
+{
+    public partial class Registration : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtbxFName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtbxLName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {            
+            lblWelcome.Text = "Welcome to ASP.NET WebForms, " + txtbxFName.Text + " " + txtbxLName.Text;
+            lblWelcome.Visible = true;
+        }
+    }
+}
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  https://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5"/>
+    <httpRuntime targetFramework="4.5"/>
+    <pages>
+      <namespaces>
+        <add namespace="System.Web.Optimization"/>
+      </namespaces>
+      <controls>
+        <add assembly="Microsoft.AspNet.Web.Optimization.WebForms" namespace="Microsoft.AspNet.Web.Optimization.WebForms" tagPrefix="webopt"/>
+      </controls>
+    </pages>
+  </system.web>
+  <appSettings>
+    <add key="ValidationSettings: UnobstrusiveValidationMode" value="None" />
+    <add key="aspnet:UseTaskFriendlySynchronizationContext" value="true"/>
+    <add key="ValidationSettings:UnobtrusiveValidationMode" value="WebForms"/>
+  </appSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"> 
+      <dependentAssembly>
+        <assemblyIdentity name="Antlr3.Runtime" publicKeyToken="eb42632606e9261f"/>
+        <bindingRedirect oldVersion="0.0.0.0-3.5.0.2" newVersion="3.5.0.2"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed"/>
+        <bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="11.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35"/>
+        <bindingRedirect oldVersion="0.0.0.0-1.6.5135.21930" newVersion="1.6.5135.21930"/>
+      </dependentAssembly>      
+    </assemblyBinding>
+  </runtime>
+  <system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs"
+        type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+        warningLevel="4" compilerOptions="/langversion:6 /nowarn:1659;1699;1701"/>
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb"
+        type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+        warningLevel="4" compilerOptions="/langversion:14 /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+"/>
+    </compilers>
+  </system.codedom>
+</configuration>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace JobExercises
+{   
+    class Program
+    {
+        
+        static void OnBase()
+        {
+            for (int i = 1; i < 101; i++)
+            {
+                Console.Write(i);
+                if ((i % 7 == 0) && (i % 3 == 0))
+                {
+                    Console.WriteLine(" OnBase");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine(" On");
+                }
+                else if (i % 7 == 0)
+                {
+                    Console.WriteLine(" Base");
+                }
+                else
+                {
+                    Console.WriteLine();
+                }
+            }
+        
+        }
+
+        static char[] myArrayReverse(char[] ArrayIn)
+        {
+            Array.Reverse(ArrayIn);
+
+            return ArrayIn;
+        }
+        static char[] myManualArrayReverse(char[] oneArray)
+        {
+            int length = oneArray.Length;
+
+            if (length > 0)
+
+            {
+                if (length > 1)
+
+                {
+                    int first = 0;
+
+                    int last = length - 1;
+
+                    char temp = ' ';
+
+                    for (int i = 0; i < (length / 2); i++)
+                    {
+                        temp = oneArray[first];
+
+                        oneArray[first] = oneArray[last];
+
+                        oneArray[last] = temp;
+
+                        first++;
+
+                        last--;
+                    }
+                }
+            }
+
+            return oneArray;
+        }
+        static void primes(int start, int end)
+        {
+
+            for (int a = start; a < end + 1; a++)
+            {
+                int prime = 1;
+
+                for (int b = 2; b <= a-1; b++)
+                {
+                    if ( a % b == 0)
+                    {
+                        prime = 0;
+                    }
+                }
+
+                if ( prime == 1 )
+                {
+                    Console.WriteLine(a);
+                    Console.WriteLine();
+                }
+            }
+        }
+        static void Main(string[] args)
+        {
+            char[] charArray = { 'H', 'a', 'n', 'n', 'a', 'h' };
+            char[] charSecondArray = { 'S','p','i','d','e','r','m','a','n' };
+
+            OnBase();
+            Console.ReadLine();
+
+            for (int i = 0; i < 6; i ++)
+            {
+                Console.Write(charArray[i]);
+            }
+            Console.WriteLine();
+
+            charArray = myArrayReverse(charArray);
+
+            for (int i = 0; i < 6; i++)
+            {
+                Console.Write(charArray[i]);
+            }
+            Console.WriteLine();
+            Console.ReadLine();
+
+            primes(2, 99);
+            Console.ReadLine();
+
+            for (int i = 0; i < charSecondArray.Length ; i++)
+            {
+                Console.Write(charSecondArray[i]);
+            }
+
+            Console.WriteLine();
+            Console.ReadLine();
+
+            charSecondArray = myManualArrayReverse(charSecondArray);
+
+            for (int i = 0; i < charSecondArray.Length; i++)
+            {
+                Console.Write(charSecondArray[i]);
+            }
+
+            Console.WriteLine();
+            Console.ReadLine();
+        }
+    }
+}
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  https://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5" />
+    <httpRuntime targetFramework="4.5" />
+  </system.web>
+  <appSettings>
+      <add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />
+  </appSettings>
+</configuration>
+
+
+
+

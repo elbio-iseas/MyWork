@@ -1,0 +1,19 @@
+ETL involves the reading of the data source, the application of business, transformation, and technical rules, and last the loading of data in the data warehouse.
+ETL is part of the application architecture and it presents issues that need to be addressed. These issues are 'the data, technology, and "person" ', and they influence the ETL process. 
+The issues with data are:
+a) the quality of data
+b) similarity of data source structure and data warehouse data structure
+c) dependencies in existing data
+d) metadata use
+e) complexity of data relationships
+The issues with Technology are:
+a) volume and frequency of load
+b) storage space needed
+c) amount of interoperability between source and target
+d) schedule for ETL processes
+The issues with people are:
+a) people's comfortability about the technology available to use
+b) in-house expertise available
+c) ETL processes support
+                                                                     References
+http://tdan.com/extraction-transformation-and-load-issues-and-approaches/4839

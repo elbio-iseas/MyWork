@@ -1,0 +1,8 @@
+INSERT INTO CUSTOMER_X_ADDR (Customer_id,Effective_dt,Street_ADDR_1,Street_Addr_2,City,State,Region,Telephone_no,Zip_cd) VALUES
+('23','2013-06-19','1197 Green Ash Street','NULL','Syracuse','NY','Eastern','315-443-1822','13210'),
+('28','2013-08-15','6900 Bissonnett','NULL','Houston','TX','Southwest','713-772-5642','77074'),
+('32','2013-10-20','8700 Turnpike Dr','NULL','Arvada','CO','Southwest','303-379-8515','80030'),
+('35','2014-01-02','4000 Fairfield Blvd','NULL','San Mateo','CA','Pacific','650-558-2641','94403'),
+('40','2014-06-30','780 North Fern','NULL','Jersey City','NJ','Eastern','201-433-0453','07306'),
+('43','2014-09-11','7238 Fenton Dr','NULL','Redmond','WA','Pacific','425-702-4616','98052'),
+('52','2015-03-07','36 Plaza Way','Suite 100','Kansas City','MO','Central','816-513-1330','64106')

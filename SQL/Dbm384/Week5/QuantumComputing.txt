@@ -1,0 +1,8 @@
+According to the article on the webpage of the references, "Quantum Computing is the area of study focused on developing computer technlogy based on the principles of quantum theory. ..."  The study of quantum computing addresses the behavior of energy at a small level like atomic or even smaller like subatomic. These types of computing studies started in the Argonne National Labs by Paul Benioff in 1981, but they have been continued by IBM, Massachusets Institute of Technology, Los Alamos National Laboratory, and the Oxford University.
+
+How might Quantum Computing aide in this need for data analysis?
+
+
+                                                References
+
+http://whatis.techtarget.com/definition/quantum-computing

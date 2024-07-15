@@ -1,0 +1,11 @@
+Project Implementation warning signs:
+1 - The requirement definition phase is well past the target date.
+      Every time a phase in the a project is late, the phases are going to be late also or they will have less time in order to meet deadlines, therefore it is crucial to meet deadlines to avoid losses. A solution is to focus in capturing only information needed for the requirements; meet with users and put another date to turn in the deliverable.
+2 - Need to write too many in-house programs. 
+      The wrong tools were selected. Choose the right tools. Bringing more people to the project could be plan B but it is not always a good solution to fix the problem. It may be necessary as a last resource.
+3 - Users not cooperating to provide details of data.
+      This issue can bring a drag to the project, in this case management and executives need to be involved to sort this issue.
+4 - Users not comfortable with technology being used.
+     In this case, training is a key factor as well as selecting the right tool for querying the data warehouse. Users need the right training to obtain better results to help in decision making.
+5 - Continuing problem with data.
+     This happens when the data transformation and mapping are not complete. The solution is revise all the data transformation and integration routines. Check for missing information and have participation of users when double checking.

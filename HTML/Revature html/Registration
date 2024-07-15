@@ -1,0 +1,78 @@
+@model Marathon.Models.Participant
+
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+
+@using(Html.BeginForm())
+{ 
+    @Html.ValidationSummary()
+    <table>
+        <tr>
+            <td style="width: 125px; padding-left: 6px; background-color: Navy; color: White;">Phone Number</td>
+            <td style="width: 100px">
+                @Html.EditorFor(m=> m.PhoneNumber, new { htmlAttributes = new { autofocus = "autofocus" } }) 
+                @Html.ValidationMessageFor(m=> m.PhoneNumber)
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width: 125px; padding-left: 6px; background-color: Navy; color: White;">Participant Name</td>
+            <td style="width: 150px">
+                @Html.TextBoxFor(m => m.ParticipantName, new { style = "width: 50%" })
+                @Html.ValidationMessageFor(m => m.ParticipantName)
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width: 125px; padding-left: 6px; background-color: Navy; color: White;">Date of Birth</td>
+            <td style="width: 236px">
+                @Html.EditorFor(m=>m.DateOfBirth)
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width: 125px; padding-left: 6px; background-color: Navy; color: White;">Address</td>
+            <td style="width: 180px">
+                @Html.TextBoxFor(m=>m.Address, new { style = "width: 80%" })
+                @Html.ValidationMessageFor(m=> m.Address)
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 125px; padding-left: 6px; background-color: Navy; color: White;">Email Address</td>
+            <td style="width: 200px">
+                @Html.TextBoxFor(m=>m.Email, new { style = "width: 60%" })
+                @Html.ValidationMessageFor(m=> m.Email)
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 125px; padding-left: 6px; background-color: Navy; color: White;">Gender</td>
+            <td style="width: 150px">
+                @Html.DropDownListFor(m => m.Gender, new[]
+                {
+                    new SelectListItem()
+                    {
+                        Text = "Male",
+                        Value = bool.TrueString
+                    },
+                    new SelectListItem()
+                    {
+                        Text = "Female",
+                        Value = bool.FalseString
+                    }
+                }, "Select Gender")
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        <input type="submit" value="Register" />
+    </p>
+} 
+

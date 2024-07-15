@@ -1,0 +1,10 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\bin\Debug\POSWeekFour.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\bin\Debug\POSWeekFour.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\bin\Debug\POSWeekFour.xml
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\obj\x86\Debug\POSWeekFour.frmMain.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\obj\x86\Debug\POSWeekFour.ListOfAppliances.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\obj\x86\Debug\POSWeekFour.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\obj\x86\Debug\POSWeekFour.vbproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\obj\x86\Debug\POSWeekFour.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\obj\x86\Debug\POSWeekFour.xml
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\POSWeekFour\POSWeekFour\obj\x86\Debug\POSWeekFour.pdb

@@ -1,0 +1,20 @@
+Invoice_id	Invoice_dt	 Book_dt	 Due_dt	    Invoice_amt	Customer_id	Supplier_Id	Order_id	Payment_Method
+(22240,	    6/8/2015	,6/8/2015	,6/18/2015,	1137.50	   ,40	       ,215	       ,10227	   ,'Credit Card'),
+(22241,	    6/10/2015	,6/10/2015	,6/20/2015,	 806.25	   ,32	       ,720	       ,10228	   ,'Credit Card'),
+(22242,	    6/12/2015	,6/12/2015	,7/12/2015,	 175.00	   ,23	       ,650	       ,10229	   ,'Credit Card'),
+(22243,	    6/16/2015	,6/16/2015	,7/6/2015,	  45.00	   ,52	       ,650	       ,10230	   ,'Credit Card'),
+(22244,	    6/18/2015	,6/18/2015	,7/3/2015,	  22.50	   ,35	       ,720	       ,10231	   ,'Credit Card'),
+(22245,	    6/20/2015	,6/20/2015	,7/20/2015,	 249.00	   ,43	       ,720	       ,10232	   ,'Credit Card'),
+(22246,	    6/22/2015	,6/22/2015	,7/22/2015,	 180.00	   ,28	       ,215	       ,10233	   ,'Credit Card');
+
+
+CREATE TABLE Invoice(
+	Invoice_id		INT		PRIMARY KEY,
+	Invoice_dt		DATE		NOT NULL,
+	Book_dt			DATE		NOT NULL,
+	Due_dt			DATE		NOT NULL,
+	Invoice_amt		DECIMAL(19,4)	NOT NULL,
+	Customer_id		INT		NOT NULL,
+	Supplier_id		INT		NOT NULL,
+	Order_id		INT		NOT NULL,
+	Payment_Method		VARCHAR(10)	NOT NULL);

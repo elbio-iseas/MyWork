@@ -1,0 +1,6 @@
+INSERT INTO SALES_PRODUCT (Sales_product_id,Sales_product_name,Description,City,Country) VALUES
+('101','Cabernet Sauvignon Wine','Full-bodied red wine with fruit flavor','Paris','France'),
+('226','Gourmet Cheese Gift Box','Slow aged with farmhouse flavor','Stockholm','Sweden'),
+('360','County Pride Stout Beer','"The Stout is barrel aged, with selected hops for lingering sweetness"','Frankfurt','Germany'),
+('417','Indian Spice Assortment','Highest quality herbs and spices from around the world','Chenguttai','India'),
+('505','Moroccan Charmoula','"Condiment of cilantro, parsley, cumin, and olive oil"','Rabat','Morocco')

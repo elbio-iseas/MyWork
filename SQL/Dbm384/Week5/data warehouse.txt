@@ -1,0 +1,20 @@
+"A Data warehouse is a relational database that is designed for query and analysis rather than for transaction processing." Companies take advantage of data warehouses to perform analysis on data and on transactions history. A data warehouse uses ETL techniques, OLAPs engines, Analysis tools and various application tools to help company decision makers use information resulting from this database. 
+
+In comparison with an OLTP, Data Warehouses use:
+a) multidimentional data structures
+b) many indexes
+c) some joins
+d) duplicated data ( with denormalized databases)
+e) derived data an aggregates
+
+while an OLTP uses:
+a) complex data structures
+b) a few indexes
+c) many joins
+d) normalized databases
+e) rarely derived data and aggregates
+
+                        References
+						
+https://docs.oracle.com/cd/B10500_01/server.920/a96520/concept.htm#50413
+

@@ -1,0 +1,20 @@
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.Form1.resources
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.Form2.resources
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.Resources.resources
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.vbproj.GenerateResource.Cache
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\bin\Debug\POS408WeekOne.exe
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\bin\Debug\POS408WeekOne.pdb
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\bin\Debug\POS408WeekOne.xml
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.exe
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.xml
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.pdb
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.exe
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.xml
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.pdb
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\bin\Debug\POS408WeekOne.exe
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\bin\Debug\POS408WeekOne.pdb
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\bin\Debug\POS408WeekOne.xml
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.Form1.resources
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.Form2.resources
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.Resources.resources
+C:\Users\Owner\Documents\Pos408\POS408WeekOne\POS408WeekOne\obj\x86\Debug\POS408WeekOne.vbproj.GenerateResource.Cache

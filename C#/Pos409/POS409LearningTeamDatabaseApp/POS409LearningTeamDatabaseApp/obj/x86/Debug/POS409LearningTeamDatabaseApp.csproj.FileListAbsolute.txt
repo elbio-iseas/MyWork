@@ -1,0 +1,14 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\bin\Debug\POS409LearningTeamDatabaseApp.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\bin\Debug\POS409LearningTeamDatabaseApp.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.Form1.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.Properties.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.csproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.csprojResolveAssemblyReference.cache
+C:\Users\mandrake\Documents\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.exe
+C:\Users\mandrake\Documents\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.pdb
+C:\Users\mandrake\Documents\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.csprojResolveAssemblyReference.cache
+C:\Users\mandrake\Documents\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.Form1.resources
+C:\Users\mandrake\Documents\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.Properties.Resources.resources
+C:\Users\mandrake\Documents\Pos409\POS409LearningTeamDatabaseApp\POS409LearningTeamDatabaseApp\obj\x86\Debug\POS409LearningTeamDatabaseApp.csproj.GenerateResource.Cache

@@ -1,0 +1,4 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\VariablesDemo\VariablesDemo\bin\Debug\VariablesDemo.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\VariablesDemo\VariablesDemo\bin\Debug\VariablesDemo.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\VariablesDemo\VariablesDemo\obj\x86\Debug\VariablesDemo.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\VariablesDemo\VariablesDemo\obj\x86\Debug\VariablesDemo.pdb

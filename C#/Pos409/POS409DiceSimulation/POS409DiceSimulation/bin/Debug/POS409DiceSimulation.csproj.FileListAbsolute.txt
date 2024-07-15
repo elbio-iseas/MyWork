@@ -1,0 +1,9 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\bin\Debug\POS409DiceSimulation.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\bin\Debug\POS409DiceSimulation.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\obj\x86\Debug\POS409DiceSimulation.frmMain.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\obj\x86\Debug\POS409DiceSimulation.Properties.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\obj\x86\Debug\POS409DiceSimulation.csproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\obj\x86\Debug\POS409DiceSimulation.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\obj\x86\Debug\POS409DiceSimulation.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\obj\x86\Debug\POS409DiceSimulation.frmResults.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DiceSimulation\POS409DiceSimulation\obj\x86\Debug\POS409DiceSimulation.csprojResolveAssemblyReference.cache

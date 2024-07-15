@@ -1,0 +1,23 @@
+In SQL staments there are four functions to handle NULL values. These functions can be used in SELECT commands to work with or without NULL values. 
+A NULL value is a value representing nothing. There are columns in which we can allow NULL values, like for instance phone number columns that we yet do not
+know the number so it can be entering at a later time. In other cases NULL are not allowed, for instance columns that represent primary or foreign keys. 
+This is a good way to find columns with NULL values, or to filter those rows with columns different than NULL values. By using the command SELECT we can
+work with the clause WHERE name of column IS NULL/IS NOT NULL to select rows with NULL or different from NULL column values.
+
+Example: SELECT * FROM Customers
+         WHERE MobileNumber IS NULL;
+
+This statement will group all the rows with the column MobileNumber with value NULL from the table Customers.
+
+Example: SELECT * FROM Payroll
+         WHERE OvertimeHours IS NOT NULL;
+
+On this statement the result rows will be those in which the column OvertimeHours values are different from NULL. This way it is easy to browse employees that
+worked overtime.
+
+There is a function called NULLIF that tests two columns or expressions and it returns a NULL value if the expressions/columns are the same. In case the expressions 
+are not equal, it returns the first expression.
+
+COALESCE returns the first value not NULL in a list of values/columns/expressions.
+
+

@@ -1,0 +1,6 @@
+c:\users\a510143\documents\visual studio 2012\Projects\Ducks\Ducks\bin\Debug\Ducks.exe.config
+c:\users\a510143\documents\visual studio 2012\Projects\Ducks\Ducks\obj\Debug\Ducks.csprojResolveAssemblyReference.cache
+c:\users\a510143\documents\visual studio 2012\Projects\Ducks\Ducks\bin\Debug\Ducks.exe
+c:\users\a510143\documents\visual studio 2012\Projects\Ducks\Ducks\bin\Debug\Ducks.pdb
+c:\users\a510143\documents\visual studio 2012\Projects\Ducks\Ducks\obj\Debug\Ducks.exe
+c:\users\a510143\documents\visual studio 2012\Projects\Ducks\Ducks\obj\Debug\Ducks.pdb

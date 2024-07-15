@@ -1,0 +1,70 @@
+<html>
+<body>
+    <body bgcolor="#F8C471">
+
+    <h3>Registration Page</h3>
+        <form id="theForm" method="get" action="home.html">
+
+    Name: <input type="text"
+                    id="name"
+                    name="name"
+                    required="required" /> </br>
+                    Address: <input type="text" id="address" name="address"></br>
+                    Zip Code: <input type="text" id="zipcode" pattern="[0-9]{5}" name="zipcode"></br>
+                    <!-- drop down List -->
+                    Country:<select id="country" name="country">
+                        <option value="India">INDIA</option>
+                        <option value="USA" selected="selected">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="UAE">UAE</option>
+                    </select></br>
+                    <!-- radio buttons-->
+                    Gender: <input type="radio" name="gender" value="m" />Male
+                            <input type="radio" name="gender" value="f" />Female</br>
+                    <!-- check box-->
+                    Skill: <input type="checkbox" name="skill" value="b"/>Bachelor
+                            <input type="checkbox" name="skill" value="m"/>Masters</br>
+                    Phone: <input type="tel" id="phone" pattern="[0-9]{3}{0-9}{3}[0-9]{4}" name="phone"/></br>
+                    Email: <input type="email" id="email" /></br>
+                    Password(must have 6 character or more + at least capital letter + at least one small")
+                           <input type="password" id="password" pattern="(?=.*[a-z](?=.*[A-Z].{6,}" name="password" /></br>
+                    <label>
+                            Select Color: <input tpe="color" name="mycolor">
+                    </label></br>
+                    Website: <input type="url" name="mywebsite"> </br>
+                    Registration Date: <input type="date" name="doj"></br>
+                    Birthday Month: <input type="onth" name="bdaymonth"></br>
+                    Select a file: <input type="file" name="myFile"></br>
+                    <input type="submit" value="SEND" id="submit" />
+                    <input type="reset" value="CLEAR" id="reset" /></br></br>
+                    <video width="320" height="240" controls>
+                            <source src="video/Gloria Estefan - Rhythm is Gonna Get You (with LYRICS).mp4"
+                                    type="video/mp4">
+                    </video>
+                    <audio src="music/06 Peter Frampton - Show Me The Way.mp3" controls>
+                        <p>If you are reading this, it is because your browser does not support the audio element.</p></audio>
+                    <input type = "Submit" value = "Send" />
+
+                    <!-- iFrame -->
+                        <div id="section" background="images/FatLossMonitor.png">
+                            <iframe width="1000px" height="350px"
+                                    name="myframe" src="story.html">
+                                <p><a href="https://revature.com/careers/" target="myframe">Careers @ Revature</a>a></p>
+                        <p><a href="https://revature.com/careers/" target="myframe">Careers @ Revature</a></p>
+                        
+                    <video width="320" height="240" controls>
+                        <source src="video/Gloria Estefan - Rhythm is Gonna Get You (with LYRICS).mp4"
+                               type="video/mp4">
+                    </video>
+
+                    <audio src="music/06 Peter Frampton - Show Me The Way.mp3" controls>
+                        <p> If you are reading this, it is because your browser does not support the audio element.</p>
+                    </audio>
+                    <div id="footer">
+                        Copyright &copy; revature.com &reg;1999 &euro;1600
+                    </div>
+
+
+
+    </body>
+</html>

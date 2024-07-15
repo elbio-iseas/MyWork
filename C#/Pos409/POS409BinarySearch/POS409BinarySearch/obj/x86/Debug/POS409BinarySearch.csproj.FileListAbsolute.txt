@@ -1,0 +1,16 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\bin\Debug\POS409BinarySearch.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\bin\Debug\POS409BinarySearch.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.csprojResolveAssemblyReference.cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.frmMain.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.Properties.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.csproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.pdb
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.exe
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.pdb
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\bin\Debug\POS409BinarySearch.exe
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\bin\Debug\POS409BinarySearch.pdb
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.csprojResolveAssemblyReference.cache
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.frmMain.resources
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.Properties.Resources.resources
+C:\Users\mandrake\Documents\Pos409\POS409BinarySearch\POS409BinarySearch\obj\x86\Debug\POS409BinarySearch.csproj.GenerateResource.Cache

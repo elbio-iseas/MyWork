@@ -1,0 +1,5 @@
+INSERT INTO WAREHOUSE (Warehouse_id,Warehouse_name,Warehouse_addr_first_line,Warehouse_addr_second_line,Description,City,Country) VALUES
+('10','European Warehouse','4 Queens Quay','"Belfast BT3 9QQ, United Kingdom"','Harland and Wolff partners','Belfast','Ireland'),
+('20','Middle East Warehouse','Al Wardiyan Sharq','Qesm Mina Al Basal','Alexandria Governorate','Al Wardiyan','Egypt'),
+('30','Americas Distribution Center','750 N Harbor Blvd','NULL','Port of Los Angeles','San Pedro','United States'),
+('40','Asian Warehouse Operations','10 Bukit Chermin Rd','Singapore 109918','Malaysian Peninsula','Singapore','Southeast Asia')

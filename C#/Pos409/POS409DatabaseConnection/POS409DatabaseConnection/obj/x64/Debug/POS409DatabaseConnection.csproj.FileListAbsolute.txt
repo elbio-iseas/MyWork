@@ -1,0 +1,8 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\bin\x64\Debug\POS409DatabaseConnection.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\bin\x64\Debug\POS409DatabaseConnection.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\obj\x64\Debug\POS409DatabaseConnection.frmMain.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\obj\x64\Debug\POS409DatabaseConnection.frmEmpList.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\obj\x64\Debug\POS409DatabaseConnection.Properties.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\obj\x64\Debug\POS409DatabaseConnection.csproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\obj\x64\Debug\POS409DatabaseConnection.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409DatabaseConnection\POS409DatabaseConnection\obj\x64\Debug\POS409DatabaseConnection.pdb

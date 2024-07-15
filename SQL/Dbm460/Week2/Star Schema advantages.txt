@@ -1,0 +1,22 @@
+The advantages of structuring the data in a star schema with dimension and fact tables for a data warehouse design are:
+ 
+1) Star schemas are easy to understand,
+2) They optimize navigation,
+3) Star schemas suitable for query processing,
+4) They allow to use special techniques like STARjoin and STARindex
+
+The second reference listed below lists the other advantages of using Star Schemas:
+ 
+a) Query performance
+b)  Load Performance and Administration
+c) Built-in referencial integrity
+d) Easily understood (it is the same advantage listed above too).
+ 
+                                                                    References
+ 
+Ponniah, P (2010) Data Warehousing Fundamentals for IT Professionals, Second Edition. John Wiley & Sons, Inc.
+ 
+http://gkmc.utah.edu/ebis_class/2003s/Oracle/DMB26/A73318/schemas.htm
+
+
+ 

@@ -1,0 +1,79 @@
+{"myVehicles":
+	[
+		{
+		  "doors": 5,
+		  "transmission": "automatic",
+		  "year": 2005,
+		  "make": "Lexus",
+		  "model": "RX330",
+		  "color": "Black",
+		  "features": 
+		  {
+			"cruise_control": true,
+			"automatic_windows": true,
+			"cup_holders": 3
+		  }
+		},
+
+		{
+		  "doors": 4,
+		  "transmission": "automatic",
+		  "year": 2013,
+		  "make": "Acura",
+		  "model": "ILX",
+		  "color": "Black",
+		  "features": 
+		  {
+			"cruise_control": true,
+			"automatic_windows": true,
+			"cup_holders": 2
+		  }
+		},
+
+		{
+		  "doors": 2,
+		  "transmission": "automatic",
+		  "year": 1995,
+		  "make": "Dodge",
+		  "model": "Avenger",
+		  "color": "Red",
+		  "features": 
+		  {
+			"cruise_control": true,
+			"automatic_windows": true,
+			"cup_holders": 1
+		  }
+		},
+		
+		{
+		  "doors": 4,
+		  "transmission": "automatic",
+		  "year": 2011,
+		  "make": "Lexus",
+		  "model": "RX350",
+		  "color": "Grey",
+		  "features": 
+		  {
+			"cruise_control": true,
+			"automatic_windows": true,
+			"cup_holders": 6
+		  }
+		},
+
+		{
+		  "doors": 4,
+		  "transmission": "automatic",
+		  "year": 2018,
+		  "make": "Toyota",
+		  "model": "Tacoma",
+		  "color": "White",
+		  "features": 
+		  {
+			"cruise_control": true,
+			"automatic_windows": true,
+			"cup_holders": 7
+		  }
+		}
+	]
+
+}

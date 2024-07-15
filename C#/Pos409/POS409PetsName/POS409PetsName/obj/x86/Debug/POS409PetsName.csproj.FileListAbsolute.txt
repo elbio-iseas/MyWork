@@ -1,0 +1,8 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\bin\Debug\POS409PetsName.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\bin\Debug\POS409PetsName.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\obj\x86\Debug\POS409PetsName.Form1.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\obj\x86\Debug\POS409PetsName.Properties.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\obj\x86\Debug\POS409PetsName.csproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\obj\x86\Debug\POS409PetsName.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\obj\x86\Debug\POS409PetsName.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409PetsName\POS409PetsName\obj\x86\Debug\POS409PetsName.csprojResolveAssemblyReference.cache

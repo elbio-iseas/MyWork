@@ -1,0 +1,63 @@
+Customers                                                        
+
+CustomerID         Int           Not Null                 
+CustomerFirstName  Varchar(30)   Not Null
+CustomerLastName   Varchar(30)   Not Null
+CustomerAddress    Varchar(50)   Not Null
+CustomerLat        Decimal(18,9) Not Null
+CustomerLong       Decimal(18,9) Not Null
+
+
+Stores   
+
+StoreID            Int           Not Null 
+StoreName          Varchar(50)   Not Null
+StoreAddress       Varchar(50)   Not Null
+StoreLat           Decimal(18,9) Not Null
+StoreLong          Decimal(18,9) Not Null
+
+Orders  
+
+OrderNum         Int            Not Null
+CustomerID       Int            Not Null
+ItemNum          Int            Not Null
+OrderStore       Int            Not Null
+OrderQty         Int            Not Null
+OrderAmount      Decimal(12,2)  Not Null
+OrderDate        date           Not Null
+OrderDistance    Int            Not Null
+
+
+PriceHistory
+
+InventoryNum        INT            NOT NULL,
+Description         VARCHAR (50)   NOT NULL,
+DatePreviousPrice   DATE           NULL,
+DateCurrentPrice    DATE           NOT NULL,
+DateEndPrice        DATE           NULL,
+InventoryPrice      DECIMAL (10,2) NOT NULL,
+PRIMARY KEY CLUSTERED (InventoryNum ASC)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

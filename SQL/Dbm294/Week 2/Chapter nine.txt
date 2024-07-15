@@ -1,0 +1,16 @@
+
+Chapter Nine it was interesting. The two type of databases SQL Server 2012 manages: the systems databases with the configuration of the system databases, the SQL Servers services and the other type is the users' databases. Microsoft offers various functions with SQL Server 2012 that includes direct access, replication, reports, analysis, monitoring, creation of, and redundancy of data, besides the IDE in a Windows standard GUI. The four models of SQL Server databases are: Systems databases, master database, model database, and tempdb database. Handling database storage can be done with database data files with the extension .mdf including the properties and schema or structure of the database. Filegroups offer the chance to store data files in different locations or drives. There is another file extension (.ldf) for transaction logs.
+
+Access Restriction controls what users can access a database and when. There are three modes of access restriction:
+1) Multi_User - for any authorized user to connect and use the database. This is the default mode.
+2) Single_User - for any single user access to connect and for using of the database.
+3) Restricted_User - for owner and administrative employees use only. 
+
+There are at least three ways for creating databases in SQL Server 2012:
+1) GUI
+2) T-SQL
+3) PowerShell
+
+                                     References
+
+Microsoft SQL Server 2012 Administration: Real-World Skills for MCSA Certification and Beyond (Exams

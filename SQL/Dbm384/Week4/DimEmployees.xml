@@ -1,0 +1,30 @@
+﻿<Employees>
+  <Employee>
+    <EmployeeID>1</EmployeeID>
+    <FirstName>Adam</FirstName>
+    <LastName>Schmitt</LastName>
+    <LatWork>3.652980000000000e+001</LatWork>
+    <LongWork>8.735950000000000e+001</LongWork>
+  </Employee>
+  <Employee>
+    <EmployeeID>2</EmployeeID>
+    <FirstName>Elbio</FirstName>
+    <LastName>Iseas</LastName>
+    <LatWork>4.076080000000000e+001</LatWork>
+    <LongWork>1.118910000000000e+002</LongWork>
+  </Employee>
+  <Employee>
+    <EmployeeID>3</EmployeeID>
+    <FirstName>Neil</FirstName>
+    <LastName>Goldstein</LastName>
+    <LatWork>4.086820000000000e+001</LatWork>
+    <LongWork>7.342570000000001e+001</LongWork>
+  </Employee>
+  <Employee>
+    <EmployeeID>4</EmployeeID>
+    <FirstName>Sharon</FirstName>
+    <LastName>Foster</LastName>
+    <LatWork>3.402320000000000e+001</LatWork>
+    <LongWork>8.436160000000000e+001</LongWork>
+  </Employee>
+</Employees>

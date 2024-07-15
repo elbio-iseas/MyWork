@@ -1,0 +1,8 @@
+C:\Users\Owner\source\repos\Tateti\Tateti\bin\Debug\Tateti.exe.config
+C:\Users\Owner\source\repos\Tateti\Tateti\bin\Debug\Tateti.exe
+C:\Users\Owner\source\repos\Tateti\Tateti\bin\Debug\Tateti.pdb
+C:\Users\Owner\source\repos\Tateti\Tateti\obj\Debug\Tateti.csproj.CoreCompileInputs.cache
+C:\Users\Owner\source\repos\Tateti\Tateti\obj\Debug\Tateti.exe
+C:\Users\Owner\source\repos\Tateti\Tateti\obj\Debug\Tateti.pdb
+C:\Users\Owner\source\repos\Tateti\Tateti\obj\Debug\Tateti.csproj.AssemblyReference.cache
+C:\Users\Owner\source\repos\Tateti\Tateti\obj\Debug\Tateti.csproj.SuggestedBindingRedirects.cache

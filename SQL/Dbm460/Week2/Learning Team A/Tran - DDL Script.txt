@@ -1,0 +1,105 @@
+CREATE TABLE Invoice(
+	Invoice_id		INT		PRIMARY KEY,
+	Invoice_dt		DATE		NOT NULL,
+	Book_dt			DATE		NOT NULL,
+	Due_dt			DATE		NOT NULL,
+	Invoice_amt		DECIMAL(19,4)	NOT NULL,
+	Customer_id		INT		NOT NULL,
+	Supplier_id		INT		NOT NULL,
+	Order_id		INT		NOT NULL,
+	Payment_Method		VARCHAR(10)	NOT NULL);
+
+CREATE TABLE Shipment(
+	Order_line_id		INT		NOT NULL,
+	Warehouse_id		INT		NOT NULL,
+	Shipment_dt		DATE		NOT NULL,
+	Carrier			VARCHAR(20)	NOT NULL,
+	Delivery_dt		DATE		NOT NULL,
+	CONSTRAINT 	pk_ShipmentID		PRIMARY KEY (Order_line_id, Warehouse_id));
+
+CREATE TABLE Warehouse(
+	Warehouse_id			INT		PRIMARY KEY,
+	Warehouse_name			VARCHAR(30)	NOT NULL,
+	Warehouse_addr_first_line	VARCHAR(30)	NOT NULL,
+	Warehouse_addr_second_line	VARCHAR(30),
+	Description			VARCHAR(100)	NOT NULL,
+	City				VARCHAR(20)	NOT NULL,
+	Country				VARCHAR(20)	NOT NULL);
+
+CREATE TABLE Inventory(
+	Product_id		INT		NOT NULL,
+	Warehouse_id		INT		NOT NULL,
+	Inventory_effective_dt	INT		NOT NULL,
+	Units_on_shelf		INT		NOT NULL,
+	CONSTRAINT	pk_InventoryID		PRIMARY KEY (Product_id, Warehouse_id, Inventory_effective_dt));
+
+CREATE TABLE Product(
+	Product_id		INT		PRIMARY KEY,
+	Name			VARCHAR(30)	NOT NULL,
+	Description		VARCHAR(100)	NOT NULL,
+	Supplier_id		INT		NOT NULL);
+
+CREATE TABLE Product_Detail(
+	Product_id		INT		NOT NULL,
+	Product_effective_dt	DATE		NOT NULL,
+	Status			VARCHAR(20)	NOT NULL,
+	Supplier		VARCHAR(30)	NOT NULL,
+	Units_per_pallet	INT		NOT NULL,
+	Units_per_package	INT		NOT NULL,
+	Unit_price		DECIMAL(19,4)	NOT NULL,
+	Unit_cost		DECIMAL(19,4)	NOT NULL,
+	CONSTRAINT	pk_ProdDetailID		PRIMARY KEY (Product_id, Product_effective_dt));
+
+CREATE TABLE Currency(
+	Currency_id		INT		PRIMARY KEY,
+	Name			VARCHAR(20)	NOT NULL,
+	Description		VARCHAR(100)	NOT NULL);
+
+CREATE TABLE Exchange_Rate(
+	Currency_id			INT		NOT NULL,
+	Effective_dt			DATE		NOT NULL,
+	Exchange_Rate_To_US_Dollar	DECIMAL(9,8)	NOT NULL,
+	End_dt				DATE		NOT NULL,
+	CONSTRAINT	pk_ExchangeID		PRIMARY KEY (Currency_id, Effective_dt));
+
+CREATE TABLE Customer(
+	Customer_id		INT		PRIMARY KEY,
+	Name			VARCHAR(100)	NOT NULL,
+	Description		VARCHAR(100)	NOT NULL);
+
+CREATE TABLE Customer_X_ADDR(
+	Customer_id		INT		NOT NULL,
+	Effective_dt		DATE		NOT NULL,
+	Street_ADDR_1		VARCHAR(50)	NOT NULL,
+	Street_ADDR_2		VARCHAR(50),
+	City			VARCHAR(20)	NOT NULL,
+	State			VARCHAR(20)	NOT NULL,
+	Region			VARCHAR(20)	NOT NULL,
+	Telephone_no		TINYINT		NOT NULL,
+	Zip_cd			TINYINT		NOT NULL,
+	CONSTRAINT	pk_AddressID		PRIMARY KEY (Customer_id, Effective_dt));
+
+CREATE TABLE Customer_Detail(
+	Customer_id		INT		NOT NULL,
+	Effective_dt		DATE		NOT NULL,
+	Days_for_payment	SMALLINT	NOT NULL,
+	Delivery_way_id		VARCHAR(30)	NOT NULL,
+	Finance_group		VARCHAR(30)	NOT NULL,
+	Marketing_category	VARCHAR(30)	NOT NULL,
+	Type			VARCHAR(30)	NOT NULL,
+	Sales_rep_id		INT		NOT NULL,
+	Default_Payment_Method	VARCHAR(10)	NOT NULL,
+	CONSTRAINT	pk_CusDetailID		PRIMARY KEY (Customer_id, Effective_dt));
+
+ CREATE TABLE Sales_Rep(
+	Sales_rep_id		INT		PRIMARY KEY,
+	Name			VARCHAR(100)	NOT NULL,
+	Description		VARCHAR(100)	NOT NULL,
+	Employee_code		TINYINT		NOT NULL,
+	Manager_id		INT		NOT NULL,
+	Sales_product_id	INT		NOT NULL);
+
+CREATE TABLE Sales_Product(
+	Sales_product_id	INT		PRIMARY KEY,
+	Name			VARCHAR(50)	NOT NULL,
+	

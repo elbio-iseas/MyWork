@@ -1,0 +1,20 @@
+"Business Intelligence (BI) is a technology-drive process for analyzing data and presenting actionable information to help corporate executives, business managers and other end users make more informed business decisions." 
+
+Benefits of using Business Intelligence include:
+
+1) they help to make better and quicker decisions
+2) they optimize internal business processes
+3) they increase efficienchy from the operational point of view
+4) they help companies to get competitive advantages in the market.
+
+Business Intelligence can include several techniques such as:
+1) data mining
+2) predictive analytics
+3) text mining
+4) statistical analysis
+5) big data analytics
+
+                              References
+					 
+http://searchdatamanagement.techtarget.com/definition/business-intelligence					 
+

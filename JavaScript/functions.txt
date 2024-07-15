@@ -1,0 +1,42 @@
+function toCelsius(f)
+{
+	return (5/9) * f-32;
+}
+
+function toFarenheit(c)
+{
+	return (c+32) / (5/9);
+}
+
+var myTemp = toFarenheit(23.5);
+	
+console.log("The temparature in F is", myTemp);
+
+function sayHello()
+{
+	console.log("Hello");
+}
+
+
+sayHello();
+
+
+var fighterjets = ["F-35","F-117","F-22","F-16"];
+
+console.log(fighterjets[0]);
+console.log(fighterjets[1]);
+console.log(fighterjets[2]);
+console.log(fighterjets[3]);
+
+fighterjets.push("F-14");
+
+console.log(fighterjets[4]);
+
+fighterjets.pop();
+
+var totalFighterjets = fighterjets.lenght;
+
+fighterjets = fighterjets.sort();
+
+fighterjets = fighterjets.reverse();
+

@@ -1,0 +1,33 @@
+﻿  stdafx.cpp
+  TheaterSeatingProgram.cpp
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(288): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(335): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(580): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(669): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(778): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(788): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(796): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(914): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(973): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(1034): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(1040): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(1210): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(1216): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(1313): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\theaterseatingprogram\theaterseatingprogram\theaterseatingprogram.cpp(1445): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+  TheaterSeatingProgram.vcxproj -> C:\Users\mandrake\Documents\Prg410\Week 04\TheaterSeatingProgram\Debug\TheaterSeatingProgram.exe

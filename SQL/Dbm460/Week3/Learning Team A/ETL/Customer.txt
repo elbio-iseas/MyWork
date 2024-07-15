@@ -1,0 +1,8 @@
+INSERT INTO CUSTOMER (Customer_id,Customer_Name,Description) VALUES
+('23','Geraldine Billingsby','Elegance Catering Service'),
+('28','Stanley Reinholdt','Golden Moments Events Center'),
+('32','William Dorsey','Table Mountain Resort'),
+('35','Janet Carson','North Coast Bed and Breakfast'),
+('40','Allison Jeffries','McHenry's Fine Steakhouse'),
+('43','James Yoder','Yoder Family Delicatessen'),
+('52','John Grossman','Sweet Beginnings')

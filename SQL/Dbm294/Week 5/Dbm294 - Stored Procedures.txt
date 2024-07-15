@@ -1,0 +1,27 @@
+
+In an article of Tony Patton from www.techrepublic.com about determining when to use stored procedures versus sql statements, he states that the decision of using one option or another depends on the user, but with stored procedures which can be called by a user or by an application or another stored procedure there are some benefits:
+* modularity
+* faster execution
+* network traffic reduction
+* security mechanism use
+Also stored procedures can receive input parameters for processing transactions and even return values as output parameters to the invoking procedure. We can determine if the transactions in the stored procedure finished successfully or if it had erros (with the reasons why it failed). Stored procedures can be executed from memory later than the first time it was ran.
+Example of stored procedure with SELECT statement:
+CREATE PROCEDURE dbo.Address_Customer_Show
+AS
+SELECT cst.FirstName,
+                cst.LastName,
+                adr.Street,
+                cty.Name AS City,
+                stat.Name AS State,
+                adr.ZipCode
+FROM Address AS adr
+INNER JOIN City AS cty
+            ON adr.City = cty.CityID
+INNER JOIN State AS stat
+            ON adr.State = stat.StateID
+INNER JOIN Customer AS cst
+            ON adr.CustomerID = cst.CustomerID
+GO
+EXEC dbo.Address_Customer_Show                
+                                                                  References
+http://www.techrepublic.com/article/determine-when-to-use-stored-procedures-vs-sql-in-the-code/

@@ -1,0 +1,26 @@
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\bin\Debug\POS409Inheritance.exe
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\bin\Debug\POS409Inheritance.pdb
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.frmMain.resources
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.frmEmpList.resources
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.Properties.Resources.resources
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.csproj.GenerateResource.Cache
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.exe
+c:\users\elbio\documents\visual studio 2010\Projects\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\bin\Debug\POS409Inheritance.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\bin\Debug\POS409Inheritance.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.frmMain.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.frmEmpList.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.Properties.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.csproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.csprojResolveAssemblyReference.cache
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.exe
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.pdb
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\bin\Debug\POS409Inheritance.exe
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\bin\Debug\POS409Inheritance.pdb
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.csprojResolveAssemblyReference.cache
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.frmMain.resources
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.frmEmpList.resources
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.Properties.Resources.resources
+C:\Users\mandrake\Documents\Pos409\POS409Inheritance\POS409Inheritance\obj\x86\Debug\POS409Inheritance.csproj.GenerateResource.Cache

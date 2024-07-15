@@ -1,0 +1,33 @@
+using System;
+
+namespace DosPrg
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Clear();
+            DateTime aDate = new DateTime(2020, 4, 7);
+            Console.SetCursorPosition(10, 10);
+            Console.WriteLine(aDate.ToString("MM/dd/yyyy"));
+            Console.WriteLine();
+            Console.SetCursorPosition(10, 12);
+            Console.WriteLine("Press any key to continue ... ");
+            Console.ReadKey();
+            Console.Clear();
+            Console.SetCursorPosition(10, 14);
+            Console.WriteLine(aDate.ToLongDateString());
+            Console.WriteLine();
+            Console.SetCursorPosition(10, 16);
+            Console.WriteLine(aDate.ToShortDateString());
+            Console.SetCursorPosition(10, 18);
+            Console.WriteLine("Hello World!");
+            Console.SetCursorPosition(10, 20);
+            Console.WriteLine("Press any key to continue ... ");
+            Console.ReadKey();
+        }
+    }
+}

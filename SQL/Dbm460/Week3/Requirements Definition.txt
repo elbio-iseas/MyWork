@@ -1,0 +1,23 @@
+The Requirements Definition Document is part of the documentation for a Data Warehouse project. It is important that the project has this documentation in case participants no longer belong to the project. By having the document, the continuation of the project will continue without any problem if any project manager decides to go or cannot continue.
+In this document will find:
+1) Data Sources
+     The types of data sources found in the system for the Data Warehouse, which will be integrated with other data to populate the data warehouse. The document will states the data sources, data structures, where these data sources are located, OSs, networks, protocols, and any client architecture found. Also, it should mention the data extraction procedures used for the data warehouse.
+2) Data Transformation
+    It explains what procedures will use to transform data from the data sources  to make them ready for storing in the datawarehouse. 
+3) Data Storage
+    The storage requirements will result from interviews with users, data sources, data structures, metrics and dimensions of the business. Data storage details must be precise.
+4) Information Delivery
+    Users will receive the following information:
+    a) Drill-down analysis
+    b) Roll-up analysis
+    c) Drill-through analysis
+    d) Slicing and Dicing analysis
+    e) Ad-hoc reports
+    f) Online monitoring tools
+5) Information Package Diagrams
+    Diagrams are an important part of gathering requirements because the data warehouse will rely on the accuray of information package diagrams.
+                                                                     References
+Coronel, C., Morris, S., & Rob, P. (2015). Database Systems, Implementation, and Management (11th ed.). Stamford, CT: Centegage Learning
+
+
+      

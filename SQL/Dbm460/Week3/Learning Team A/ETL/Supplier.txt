@@ -1,0 +1,8 @@
+INSERT INTO SUPPLIER (Supplier_id,Supplier_name,City,Country,Telephone_number,Discount_Percentage,Contact_person_name) VALUES
+('215','"Napa Gardens & Vinyard, Inc."','Napa','United States','800-215-4371','10.13','Roger Martinez'),
+('340','Tillamook Cheese Factory','Tillamook','United States','800-275-0639','5.00','Barton Lamont'),
+('423','Gourmet Meats','London','England','519-601-5223','0.00','Winston Graves'),
+('446','Confectioners Candy Shoppe','Brussels','Belgium','02 503 07 90','2.50','Moeder Babelutte'),
+('612','Mediterranian Exporters','Cairo','Egypt','NULL','0.00','Mounir Kareem'),
+('650','Spokane Orchards','Spokane','United States','509-223-7435','15.00','John Southwick'),
+('720','Deshpande Fruit and Nut Company','Nagpur','India','+91 98222 31235','2.00','Indra Deshpande')

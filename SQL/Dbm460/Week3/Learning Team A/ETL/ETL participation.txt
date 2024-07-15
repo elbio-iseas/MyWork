@@ -1,0 +1,20 @@
+                     The impact of requirements on architecture
+					 
+ETLs demand a great deal of time if we want to avoid crashes at loading time. 
+The first step on ETL processes is Data Extraction. We have to consider internal
+and external data sources taking into account compatibility of Operating Systems,
+data structures. All methods and procedures used for data extraction need to be
+documented.
+
+The second step is Data Transformation. In order to prepare data to be ready for 
+loading, data go through several functions like filtering, normalization or 
+denormalization, aggregation, conversion to the right column type, and verification
+of values correct so there are no mismatch errors when loading.
+
+The third step is Data Loading. It starts by defining the initial load. The time of 
+the day when the loading will occur needs to be planned, how many loads per day, also
+determine the frequency of loads: daily, weekly, monthly.
+
+                         References
+						 
+

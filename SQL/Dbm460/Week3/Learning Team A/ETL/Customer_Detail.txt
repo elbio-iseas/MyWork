@@ -1,0 +1,8 @@
+INSERT INTO CUSTOMER_DETAIL (Customer_id,Effective_dt,Days_for_payment,Delivery_way_id,Finance_group,Marketing_category,Type,Sales_rep_id,Default_payment_method) VALUES
+('23','6/19/2013','30','Air','Cal West','Caterer','A','1118','Credit Card'),
+('28','8/15/2013','30','Air','Edwards Financial','Caterer','A','1325','Credit Card'),
+('32','10/20/2013','10','Truck','Edwards Financial','Restauranteur','B','5023','Credit Card'),
+('35','1/2/2014','15','Truck','Mutual Group','Bed & Breakfast','C','4136','Credit Card'),
+('40','6/30/2014','10','Air','Mutual Group','Restauranteur','B','1561','Credit Card'),
+('43','9/11/2014','30','Truck','Cal West','Caterer','A','4447','Credit Card'),
+('52','3/7/2015','20','Air','Edwards Financial','Restauranteur','B','1010','Credit Card')

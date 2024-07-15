@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0054)https://www.mssqltips.com/tipimages2/2118_SQLcode.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>USE</title>
+</head>
+
+<body>
+
+<pre>USE [pubs]
+GO
+/****** Object: UserDefinedFunction [dbo].[fnGetTableSchemaSelectInto] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 03/02/2010
+-- Description: Retrieve Table Schema for Select Into
+-- =============================================
+CREATE FUNCTION [dbo].[fnGetTableSchemaSelectInto]
+(
+@TableName varchar(50)
+)
+RETURNS varchar(2000)
+AS
+BEGIN
+
+DECLARE @ResultVar varchar(2000)
+
+DECLARE @i int, @sSql varchar(2000)
+
+SELECT @sSql = '' 
+
+SELECT @i = MIN(ordinal_Position)
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName 
+AND Column_Name not in 
+(SELECT c.name AS ColumnName
+FROM sys.columns AS c INNER JOIN sys.tables AS t ON t.[object_id] = c.[object_id]
+WHERE c.is_identity = 1 and t.name = @TableName)
+AND data_Type &lt;&gt; 'timestamp' 
+
+WHILE @i is not null
+BEGIN 
+
+SELECT @sSql = @sSql + replace(replace(column_name,' ',''),'/','') + ','
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName 
+AND ordinal_Position = @i
+AND data_Type &lt;&gt; 'timestamp'
+
+SELECT @i = min(ordinal_Position) 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName 
+AND Column_Name not in 
+(SELECT c.name AS ColumnName
+FROM sys.columns AS c INNER JOIN sys.tables AS t ON t.[object_id] = c.[object_id]
+WHERE c.is_identity = 1 and t.name = @TableName) 
+AND data_Type &lt;&gt; 'timestamp' 
+AND ordinal_Position &gt; @i
+END
+
+SET @sSql = @sSql + '//'
+
+SET @ResultVar = replace(@sSql, ',//','')
+
+-- Return the result of the function
+RETURN @ResultVar
+
+END
+GO
+/****** Object: UserDefinedFunction [dbo].[fnGetTableSchemaInsert] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/28/2009
+-- Description: Retrieve Table Schema for Insert
+-- =============================================
+CREATE FUNCTION [dbo].[fnGetTableSchemaInsert]
+(
+@TableName varchar(50)
+)
+RETURNS varchar(2000)
+AS
+BEGIN
+
+DECLARE @ResultVar varchar(2000)
+
+DECLARE @i int, @sSql varchar(2000)
+
+SELECT @sSql = '' 
+
+SELECT @i = MIN(ordinal_Position)
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName 
+AND Column_Name not in 
+(SELECT c.name AS ColumnName
+FROM sys.columns AS c INNER JOIN sys.tables AS t ON t.[object_id] = c.[object_id]
+WHERE c.is_identity = 1 and t.name = @TableName)
+AND data_Type &lt;&gt; 'timestamp' 
+
+WHILE @i is not null
+BEGIN 
+
+SELECT @sSql = @sSql + CASE data_type
+WHEN 'varchar' THEN 
+CASE WHEN character_maximum_length = -1 THEN
+'[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(MAX), '
+ELSE 
+'[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(' + cast(isnull(character_maximum_length,numeric_precision) as varchar(60)) + '), '
+END
+WHEN 'nvarchar' THEN '[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(' + cast(isnull(character_maximum_length,numeric_precision) as varchar(60)) + '), '
+WHEN 'char' THEN '[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(' + cast(isnull(character_maximum_length,numeric_precision) as varchar(60)) + '), '
+ELSE '[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + ', '
+END
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName 
+AND ordinal_Position = @i
+AND data_Type &lt;&gt; 'timestamp'
+
+SELECT @i = min(ordinal_Position) 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName 
+AND Column_Name not in 
+(SELECT c.name AS ColumnName
+FROM sys.columns AS c INNER JOIN sys.tables AS t ON t.[object_id] = c.[object_id]
+WHERE c.is_identity = 1 and t.name = @TableName) 
+AND data_Type &lt;&gt; 'timestamp' 
+AND ordinal_Position &gt; @i
+END
+
+SET @sSql = @sSql + '//'
+
+SET @ResultVar = replace(@sSql, ', //','')
+
+-- Return the result of the function
+RETURN @ResultVar
+
+END
+GO
+/****** Object: UserDefinedFunction [dbo].[fnGetTableSchema] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/28/2009
+-- Description: Retrieve Table Schema
+-- =============================================
+CREATE FUNCTION [dbo].[fnGetTableSchema]
+(
+@TableName varchar(50)
+)
+RETURNS varchar(2000)
+AS
+BEGIN
+
+DECLARE @ResultVar varchar(2000)
+
+DECLARE @i int, @sSql varchar(2000)
+
+SELECT @sSql = '' 
+
+SELECT @i = MIN(ordinal_Position)
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND data_Type &lt;&gt; 'timestamp' 
+
+WHILE @i is not null
+BEGIN 
+
+SELECT @sSql = @sSql + CASE data_type
+WHEN 'varchar' THEN 
+CASE WHEN character_maximum_length = -1 THEN
+'[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(MAX), '
+ELSE 
+'[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(' + cast(isnull(character_maximum_length,numeric_precision) as varchar(60)) + '), '
+END
+WHEN 'nvarchar' THEN '[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(' + cast(isnull(character_maximum_length,numeric_precision) as varchar(60)) + '), '
+WHEN 'char' THEN '[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + '(' + cast(isnull(character_maximum_length,numeric_precision) as varchar(60)) + '), '
+ELSE '[' + replace(replace(column_name,' ',''),'/','') + '] ' + data_type + ', '
+END
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND ordinal_Position = @i
+
+SELECT @i = min(ordinal_Position) 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND data_Type &lt;&gt; 'timestamp'
+AND ordinal_Position &gt; @i
+END
+
+SET @sSql = @sSql + '//'
+
+SET @ResultVar = replace(@sSql, ', //','')
+
+-- Return the result of the function
+RETURN @ResultVar
+
+END
+GO
+/****** Object: UserDefinedFunction [dbo].[fnGetTableKeys] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/28/2009
+-- Description: Retrieve Table Primary Keys
+-- =============================================
+CREATE FUNCTION [dbo].[fnGetTableKeys] 
+( 
+@TableName varchar(50)
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+SELECT Ordinal_position, Column_Name 
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE table_name = @TableName
+)
+GO
+/****** Object: UserDefinedFunction [dbo].[fnGetPrimaryKeys] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/28/2009
+-- Description: Retrieve Table Primary Keys
+-- =============================================
+CREATE FUNCTION [dbo].[fnGetPrimaryKeys]
+(
+@TableName varchar(50)
+)
+RETURNS varchar(2000)
+AS
+BEGIN
+
+DECLARE @ResultVar varchar(2000)
+
+DECLARE @i int, @sSql varchar(2000)
+
+SELECT @i = 1, @sSql = '' 
+
+WHILE @i is not null
+BEGIN 
+
+SELECT @sSql = @sSql + @TableName + '.' + Column_Name + '=xm.' + Column_Name + ' AND '
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE table_name = @TableName
+AND Ordinal_position = @i
+
+-- MoveNext
+SELECT @i = min(Ordinal_position) 
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE table_name = @TableName
+AND Ordinal_position &gt; @i
+END
+
+SET @sSql = @sSql + '//'
+
+SET @ResultVar = replace(@sSql, 'AND //','')
+
+-- Return the result of the function
+RETURN @ResultVar
+
+END
+GO
+/****** Object: UserDefinedFunction [dbo].[fnSetTableSchemaSelect] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/28/2009
+-- Description: Retreive Table Schema for Insert
+-- =============================================
+CREATE FUNCTION [dbo].[fnSetTableSchemaSelect]
+(
+@TableName varchar(50)
+)
+RETURNS varchar(2000)
+AS
+BEGIN
+
+DECLARE @ResultVar varchar(2000)
+
+DECLARE @i int, @sSql varchar(2000)
+
+SELECT @sSql = '' 
+
+SELECT @i = MIN(ordinal_Position)
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName 
+AND Column_Name not in 
+(SELECT c.name AS ColumnName
+FROM sys.columns AS c INNER JOIN sys.tables AS t ON t.[object_id] = c.[object_id]
+WHERE c.is_identity = 1 and t.name = @TableName)
+AND data_Type &lt;&gt; 'timestamp' 
+
+WHILE @i is not null
+BEGIN 
+
+SELECT @sSql = @sSql + CASE data_type
+WHEN 'datetime' THEN 
+'[' + replace(replace([column_name],' ',''),'/','') + ']= CASE WHEN dbo.fnIsDate([' + replace(replace([column_name],' ',''),'/','') + '])=1 THEN NULL ELSE [' + replace(replace([column_name],' ',''),'/','') + '] END, ' 
+ELSE '[' + replace(replace(column_name,' ',''),'/','') + '], '
+END
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND ordinal_Position = @i
+AND data_Type &lt;&gt; 'timestamp'
+
+SELECT @i = min(ordinal_Position) 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND Column_Name not in 
+(SELECT c.name AS ColumnName
+FROM sys.columns AS c INNER JOIN sys.tables AS t ON t.[object_id] = c.[object_id]
+WHERE c.is_identity = 1 and t.name = @TableName) 
+AND data_Type &lt;&gt; 'timestamp' 
+AND ordinal_Position &gt; @i
+END
+
+SET @sSql = @sSql + '//'
+
+SET @ResultVar = replace(@sSql, ', //','')
+
+-- Return the result of the function
+RETURN @ResultVar
+
+END
+GO
+/****** Object: UserDefinedFunction [dbo].[fnIsDate] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 01/22/2010
+-- Description: Validate good Date
+-- =============================================
+CREATE FUNCTION [dbo].[fnIsDate] 
+(
+@DateTime datetime
+)
+RETURNS bit
+AS
+BEGIN
+
+DECLARE @ResultVar bit
+SET @ResultVar = 0
+
+IF @DateTime = '1900-01-01 00:00:00.000'
+SET @ResultVar = 1
+
+-- Return the result of the function
+RETURN @ResultVar
+
+END
+GO
+/****** Object: UserDefinedFunction [dbo].[fnGetTableUpdate] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/28/2009
+-- Description: Retrieve Table Update
+-- =============================================
+CREATE FUNCTION [dbo].[fnGetTableUpdate]
+(
+@TableName varchar(50)
+)
+RETURNS varchar(4000)
+AS
+BEGIN
+
+DECLARE @ResultVar varchar(4000)
+
+DECLARE @i int, @sSql varchar(4000)
+
+SELECT @sSql = '' 
+
+SELECT @i = MIN(ordinal_Position)
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND ordinal_Position not in (SELECT Ordinal_Position FROM [dbo].[fnGetTableKeys](@TableName)) 
+AND [Column_Name]&lt;&gt; 'SysTimeStamp' 
+
+WHILE @i is not null
+BEGIN 
+
+SELECT @sSql = @sSql + CASE data_type
+WHEN 'datetime' THEN 
+'[' + replace(replace([column_name],' ',''),'/','') + ']= CASE WHEN dbo.fnIsDate(xm.[' + replace(replace([column_name],' ',''),'/','') + '])=1 THEN NULL ELSE xm.[' + replace(replace([column_name],' ',''),'/','') + '] END, ' 
+ELSE '[' + replace(replace(column_name,' ',''),'/','') + '] = xm.' + replace(replace(column_name,' ',''),'/','') + ', '
+END
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND [Column_Name]&lt;&gt; 'SysTimeStamp' 
+AND ordinal_Position = @i
+
+SELECT @i = min(ordinal_Position) 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE [TABLE_NAME] = @TableName
+AND ordinal_Position not in (SELECT Ordinal_Position FROM [dbo].[fnGetTableKeys](@TableName))
+AND [Column_Name]&lt;&gt; 'SysTimeStamp' 
+AND ordinal_Position &gt; @i
+END
+
+SET @sSql = @sSql + '//'
+
+SET @ResultVar = replace(@sSql, ', //','')
+
+-- Return the result of the function
+RETURN @ResultVar
+
+END
+GO
+/****** Object: StoredProcedure [dbo].[prXMLDataInsert] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/24/2009
+-- Description: Translate XML to SQL RecordSet for Insert
+-- =============================================
+CREATE PROCEDURE [dbo].[prXMLDataInsert] 
+(
+@XmlData xml
+)
+AS
+BEGIN
+
+SET NOCOUNT ON
+SET ARITHABORT ON
+SET CONCAT_NULL_YIELDS_NULL ON
+SET QUOTED_IDENTIFIER ON
+SET ANSI_NULLS ON
+SET ANSI_PADDING ON
+SET ANSI_WARNINGS ON
+SET NUMERIC_ROUNDABORT OFF
+
+DECLARE @hdoc int
+
+-- Prepare XML document
+EXEC sp_xml_preparedocument @hdoc OUTPUT, @xmlData
+
+-- Set Raw XML Schema
+SELECT *
+INTO #xmlDoc 
+FROM OPENXML( @hdoc, '//*',2)
+
+-- Set Primary Table to use
+SELECT DISTINCT Identity(int,1,1) id, rt.localname + '/' + tbl.localname + '/' + col.localname as NodePath, tbl.localname as NodeRow
+INTO #xml
+FROM #xmlDoc rt 
+INNER JOIN #xmlDoc tbl
+ON rt.id = tbl.parentID and rt.parentID is null
+INNER JOIN #xmlDoc col
+ON tbl.id = col.parentID
+
+DECLARE @i int, @NodePath varchar(255), @NodeRow varchar(50), 
+@NodeKeys varchar(255), @NodeCol varchar(2000), @UpdateNodes varchar(2000), 
+@sSql nvarchar(4000), @SetSchemaSelect varchar(4000), @iVars varchar(2000)
+
+-- Set id of first row
+SELECT @i = min(id) from #xml 
+
+-- Begin looping through xml recordset
+WHILE @i is not null
+BEGIN 
+SELECT @NodePath = NodePath, @NodeRow = NodeRow FROM #xml WHERE id = @i 
+
+-- Get Table Schema for XML data columns
+SELECT @NodeCol =[dbo].[fnGetTableSchemaInsert](@NodeRow)
+SELECT @SetSchemaSelect = [dbo].[fnSetTableSchemaSelect](@NodeRow)
+SELECT @ivars = [dbo].[fnGetTableSchemaSelectInto](@NodeRow)
+
+DECLARE @param NVARCHAR(50), @pkID int, @pkIDOUT int
+
+SET @param = N'@hdoc INT, @pkIDOUT INT OUTPUT'
+
+/******* This updates xml Recordset on primary keys of a given table *******/
+
+SET @sSql = 'INSERT INTO ' + @NodeRow + '(' + @iVars + ') SELECT ' + @SetSchemaSelect + ' FROM OPENXML( @hdoc, ''' + @NodePath + ''',2) WITH (' + @NodeCol + ') as xm SELECT @pkIDOUT = SCOPE_IDENTITY()'
+
+/******* Execute the query and pass in the @hdoc for update *******/
+EXEC sp_executesql @sSql, @param, @hdoc, @pkIDOUT=@pkID OUTPUT
+
+/***** Movenext *****/
+SELECT @i = min(id) FROM #xml WHERE id &gt; @i
+END
+
+-- Release @hdoc
+EXEC sp_xml_removedocument @hdoc
+DROP TABLE #xmlDoc
+DROP TABLE #xml
+
+END
+GO
+/****** Object: StoredProcedure [dbo].[prXMLDataUpdate] Script Date: 09/22/2010 09:57:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author: WA
+-- Create date: 12/24/2009
+-- Description: Translate XML to SQL RecordSet for Update
+-- =============================================
+CREATE PROCEDURE [dbo].[prXMLDataUpdate] 
+(
+@XmlData xml
+)
+AS
+BEGIN
+
+SET NOCOUNT ON
+SET ARITHABORT ON
+SET CONCAT_NULL_YIELDS_NULL ON
+SET QUOTED_IDENTIFIER ON
+SET ANSI_NULLS ON
+SET ANSI_PADDING ON
+SET ANSI_WARNINGS ON
+SET NUMERIC_ROUNDABORT OFF
+
+DECLARE @hdoc int
+
+-- Prepare XML document
+EXEC sp_xml_preparedocument @hdoc OUTPUT, @xmlData
+
+-- Set Raw XML Schema
+SELECT *
+INTO #xmlDoc 
+FROM OPENXML( @hdoc, '//*',2)
+
+-- Set Primary Table to use
+SELECT DISTINCT Identity(int,1,1) id, rt.localname + '/' + tbl.localname + '/' + col.localname as NodePath, tbl.localname as NodeRow
+INTO #xml
+FROM #xmlDoc rt 
+INNER JOIN #xmlDoc tbl
+ON rt.id = tbl.parentID and rt.parentID is null
+INNER JOIN #xmlDoc col
+ON tbl.id = col.parentID
+
+DECLARE @i int, @NodePath varchar(255), @NodeRow varchar(50), @NodeKeys varchar(255), @NodeCol varchar(4000), @UpdateNodes varchar(4000), @sSql nvarchar(4000)
+
+-- Set id of first row
+SELECT @i = min(id) from #xml 
+
+-- Begin looping through xml recordset
+WHILE @i is not null
+BEGIN 
+SELECT @NodePath = NodePath, @NodeRow = NodeRow FROM #xml WHERE id = @i 
+
+-- Get Table Schema for XML data columns
+SELECT @NodeCol = [dbo].[fnGetTableSchema](@NodeRow)--:00
+SELECT @UpdateNodes =[dbo].[fnGetTableUpdate](@NodeRow)--:00
+SELECT @NodeKeys = [dbo].[fnGetPrimaryKeys](@NodeRow)--:00
+
+DECLARE @param NVARCHAR(50)
+SET @param = N'@hdoc INT'
+
+/******* This updates xml Recordset on primary keys of a given table *******/
+SET @sSql = 'UPDATE ' + @NodeRow + ' SET ' + @UpdateNodes + ' FROM OPENXML( @hdoc, ''' + @NodePath + ''',2) WITH (' + @NodeCol + ') as xm INNER JOIN ' + @NodeRow + ' ON ' + @NodeKeys
+
+/******* Execute the query and pass in the @hdoc for update *******/
+EXEC sp_executesql @sSql, @param, @hdoc
+
+/***** Movenext *****/
+SELECT @i = min(id) FROM #xml WHERE id &gt; @i
+END
+
+-- Release @hdoc
+EXEC sp_xml_removedocument @hdoc
+DROP TABLE #xmlDoc
+DROP TABLE #xml
+
+END
+GO
+</pre>
+
+
+
+
+</body></html>

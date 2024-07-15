@@ -1,0 +1,8 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\obj\x86\Debug\DemoStreamWriter.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\obj\x86\Debug\DemoStreamWriter.vbproj.GenerateResource.Cache
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\bin\Debug\DemoStreamWriter.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\bin\Debug\DemoStreamWriter.pdb
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\bin\Debug\DemoStreamWriter.xml
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\obj\x86\Debug\DemoStreamWriter.exe
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\obj\x86\Debug\DemoStreamWriter.xml
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\DemoStreamWriter\DemoStreamWriter\obj\x86\Debug\DemoStreamWriter.pdb

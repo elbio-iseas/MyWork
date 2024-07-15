@@ -1,0 +1,41 @@
+=========================================
+               Books table
+=========================================
+ID	           int	            Unchecked
+TITTLE	       varchar(100)	    Unchecked
+TOPIC_ID	   int	            Unchecked
+SUBTOPIC_ID	   int	            Unchecked
+ISBN	       varchar(20)	    Checked
+PUBLISHER_ID   int	            Unchecked
+AUTHOR1_ID	   int	            Unchecked
+AUTHOR2_ID	   int	            Unchecked
+AUTHOR3_ID	   int	            Unchecked
+AUTHOR4_ID	   int	            Unchecked
+PRICE	       decimal(7, 2)	Unchecked
+COVER	       image	        Checked
+BACK	       image	        Checked
+=========================================
+               Topics table
+=========================================
+ID	           int	            Unchecked
+NAME	       varchar(50)	    Unchecked
+=========================================
+               Subtopics table
+=========================================
+ID	           int	            Unchecked
+NAME	       varchar(50)	    Unchecked
+=========================================
+               Authors table
+=========================================
+ID	           int	            Unchecked
+FIRST_NAME	   varchar(40)	    Unchecked
+LAST_NAME	   varchar(40)	    Unchecked
+EMAIL	       varchar(50)	    Checked
+=========================================
+               Publishers table
+=========================================
+ID	           int	            Unchecked
+NAME	       varchar(50)	    Unchecked
+WEBSITE	       varchar(50)	    Unchecked
+=========================================
+

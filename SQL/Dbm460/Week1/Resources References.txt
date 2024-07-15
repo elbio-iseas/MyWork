@@ -1,0 +1,10 @@
+
+
+                                          References
+										  
+Coronel, C., Morris, S., & Rob, P. (2015).  Database Systems, Implementation, and Management (11th ed.). Stamford, CT: Centegage Learning.
+
+Eckerson, W. W. (2011). Performance Dashboards: Measuring, Monitoring, and Managing Your Business (2nd ed.). Hoboken, NJ: John Wiley & Sons, Inc.
+
+Linoff, G. S., & Berry, M.J. A. (2011). Data Mining Techniques: For Marketing, Sales, and Customer Relationship Management (3rd ed.). Indianapolis, IN: Ponniah, P. (2010). Data Warehousing: Fundamentals for IT Professionals (2nd ed.). Hoboken, NJ: John Wiley & Sons, Inc.
+

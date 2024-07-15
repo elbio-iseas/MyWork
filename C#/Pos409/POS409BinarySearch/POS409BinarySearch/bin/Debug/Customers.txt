@@ -1,0 +1,36 @@
+Scott Thomas,Kristin,This is a test address for the assignment,New York,NY,10010,6469421631
+Jackson,Samuel,This is a test address for the assignment,Chicago,IL,60609,3121402470
+Freeman,Morgan,This is a test address for the assignment,Los Angeles,CA,90012,3106442209
+Stewart,Patrick,This is a test address for the assignment,Santa Ana,CA,92702,7145600154
+Stone,Emma,This is a test address for the assignment,Boston,MA,02119,6178843711
+Fox,Megan,This is a test address for the assignment,Las Vegas,NV,89128,7022417986
+Fay,Mia,This is a test address for the assignment,Pasadena,CA,91105,6268346618
+Scarlett,Johansson,This is a test address for the assignment,Honolulu,HI,96813,8083562413
+Hewitt,Jennifer Love,This is a test address for the assignment,Ogden,UT,84244,3859226036
+Holmes,Katie,This is a test address for the assignment,Portland,OR,97201,5036542182
+Cruise,Tom,This is a test address for the assignment,New York,NY,10007,2127441911
+Hanks,Tom,This is a test address for the assignment,Albany,NY,12205,5186041497
+Willis,Bruce,This is a test address for the assignment,Sacramento,CA,94207,9168178917
+Stallone,Sylverster,This is a test address for the assignment,Hollywood,CA,90027,3235186031
+Eastwood,Clint,This is a test address for the assignment,San Francisco,CA,94103,4152316078
+DeNiro,Robert,This is a test address for the assignment,New York,NY,10012,5168042983
+Parker,Sarah Jessica,This is a test address for the assignment,New York,NY,10002,6314081092
+Jones,Catherine Zeta,This is a test address for the assignment,Park City,UT,94098,4354321207
+Biel,Jessica,This is a test address for the assignment,Los Angeles,CA,90003,4248701987
+Aniston,Jennifer,This is a test address for the assignment,New York,NY,10010,9176239876
+Williams,Robin,This is a test address for the assignment,New York,NY,10009,3478897183
+Sheen,Charlie,This is a test address for the assignment,Malibu,Ca,90265,4247713782
+Sheen,Martin,This is a test address for the assignment,Ogden,UT,84201,8019314018
+Neil,Sam,This is a test address for the assignment,San Diego,CA,92106,6193136001
+Swayze,Patrick,This is a test address for the assignment,New York,NY,10006,2129135467
+Washington,Denzel,This is a test address for the assignment,Pittsburg,PA,15205,4121602736
+Candy,John,This is a test address for the assignment,Seattle,WA,98106,2067247796
+Goodman,John,This is a test address for the assignment,South Jordan,UT,84095,3857371920
+Damon,Matt,This is a test address for the assignment,Grantsville,UT,84029,4352982014
+Walberg,Mark,This is a test address for the assignment,Phoenix,AZ,85003,6025372964
+Diaz,Cameron,This is a test address for the assignment,Los Angeles,CA,90001,3109322074
+Wilson,Owen,This is a test address for the assignment,Honolulu,HI,96813,8083915761
+Gibson,Mel,This is a test address for the assignment,Santa Monica,CA,90403,3104296933
+Hudson,Kate,This is a test address for the assignment,Miami,FL,33128,3055606673
+Nicholson,Jack,This is a test address for the assignment,New York,NY,10011,2129968803
+Kidman,Nicole,This is a test address for the assignment,Detroit,MI,48213,3135482021

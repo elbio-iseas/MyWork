@@ -1,0 +1,9 @@
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\bin\Debug\POS408WeekTwo.exe
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\bin\Debug\POS408WeekTwo.pdb
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\bin\Debug\POS408WeekTwo.xml
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\obj\x86\Debug\POS408WeekTwo.Main.resources
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\obj\x86\Debug\POS408WeekTwo.Resources.resources
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\obj\x86\Debug\POS408WeekTwo.vbproj.GenerateResource.Cache
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\obj\x86\Debug\POS408WeekTwo.exe
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\obj\x86\Debug\POS408WeekTwo.xml
+C:\Programming Microsoft .NET\FirstProgram\POS408WeekTwo\POS408WeekTwo\obj\x86\Debug\POS408WeekTwo.pdb

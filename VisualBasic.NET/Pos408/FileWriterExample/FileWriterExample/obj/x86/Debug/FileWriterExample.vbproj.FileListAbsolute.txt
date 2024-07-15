@@ -1,0 +1,2 @@
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\FileWriterExample\FileWriterExample\obj\x86\Debug\FileWriterExample.Resources.resources
+C:\Users\Elbio\Documents\U o Phoenix\Pos408\FileWriterExample\FileWriterExample\obj\x86\Debug\FileWriterExample.vbproj.GenerateResource.Cache

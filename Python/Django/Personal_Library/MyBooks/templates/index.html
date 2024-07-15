@@ -1,0 +1,121 @@
+<!doctype html>
+{%load static%}
+<html>
+	<head>	
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>My Book Library</title>
+	 <style>
+	     body
+		 {
+		    background-image: url('{%static 'img\backgroundimage.jpg'%}');
+			background-repeat: no-repeat; 
+			background-size: cover;
+		 }
+	    .frontdiv
+		{
+		    display: inline-block;
+			width: 25%;
+			left-margin: 0px;
+			height: 390px;
+			border: 1px solid green;
+			background-color: white;
+		}
+		.backdiv
+		{
+			display: inline-block;
+			width: 25%;		
+			
+			float: right;
+			height: 390px;
+			border: 1px solid green;
+			background-color: white;
+		}
+		button
+		{
+		    border-radius: 8px;
+		    width: 102px;
+			height: 40px;
+		    background-color: darkgreen;
+			color: white;
+			border: 1px solid green;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 18px;
+		}
+		.navdiv
+		{
+		    margin: auto;
+			width: 50%;
+			padding: 10px;
+		}
+	    .booktable
+		{
+			position: absolute;
+			top: 16px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		td
+		{
+			border: 1px solid green;
+			color: yellow;// rgb(102, 255, 102); 
+			background-color: rgb(0, 0, 102); //dark blue
+			height: 25px;
+			padding: 10px;
+			font-weight: bolder;
+			font-size: 18px;
+		}
+	 </style>
+	</head>
+<body>
+	<br />
+	<h1 align="center">Books Database</h1>
+	<div class="navdiv">
+		<a href = "index.html"><button>Home</button></a>
+		<a href = "find.html"><button>Find</button></a>
+		<a href = "add.html"><button>Add</button></a>
+		<a href = "delete.html"><button>Delete</button></a>
+		<a href = "edit.html"><button>Edit</button></a>
+		<a href = "list.html"><button>List</button></a>
+	</div>
+	<br />
+	<div class="frontdiv">
+	
+	</div>
+	<div class="backdiv">
+	</div>
+	<div class="booktable">	
+		<table>
+			<tr>
+				<td width="150">ISBN</td><td style="background-color:rgb(255, 255, 153);color: navy; "width="1200"></td><br /> 
+			</tr>
+			<tr>
+				<td width="150">Title</td><td style="background-color:rgb(255, 255, 153);color: navy; "width="1200"></td><br />			
+			</tr>
+			<tr>
+				<td width="150">Author</td><td style="background-color:rgb(255, 255, 153);color: navy; "width="1200"></td><br />
+			</tr>
+			<tr>
+				<td width="150">Email</td><td style="background-color:rgb(255, 255, 153);color: navy;" width="1200"></td><br />
+			</tr>
+			<tr>
+				<td width="150">Publisher</td><td style="background-color:rgb(255, 255, 153);color: navy; "width="1200"></td><br />			
+			</tr>
+			<tr>
+				<td width="150">Website</td><td style="background-color:rgb(255, 255, 153);color: navy;" width="1200"></td><br />			
+			</tr>
+			<tr>
+				<td width="150">Topic</td><td style="background-color:rgb(255, 255, 153);color: navy;" width="1200"></td><br />
+			</tr>
+			<tr>
+				<td width="150">Subtopic</td><td style="background-color:rgb(255, 255, 153);color: navy;" width="1200"></td><br />			
+			</tr>
+			<tr>
+				<td width="150">Price</td><td style="background-color:rgb(255, 255, 153);color: navy;" width="1200"></td><br />
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

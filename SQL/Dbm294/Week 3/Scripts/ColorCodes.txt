@@ -1,0 +1,10 @@
+Colors Codes
+1 - Blue
+2 - Green
+3 - Red
+4 - Black
+5 - White
+6 - Silver
+7 - Tan
+8 - Maroon
+9 - Shark Blue

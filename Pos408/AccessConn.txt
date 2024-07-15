@@ -1,0 +1,74 @@
+'============================================================================================================
+Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As system.EventArgs) Handles Button1.Click
+
+	Dim con As New OleDb.OleDbConnection
+
+	Dim dbProvider As String
+	Dim dbSource As String
+
+	dbProvider = "PROVIDER=Microsoft.Jet.OLEDB.4.0;"
+	dbSource = "Data Source = C:\Users\Elbio\VBA 2010\AddressBook.mdb"
+
+	con.ConnectionString = dbProvider & dbsource
+End Sub
+'============================================================================================================
+Private Sub btnLoad_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLoad.Click
+
+	Dim con As New OleDb.OleDbConnection
+	Dim dbProvider As String
+	Dim dbSource As String
+	Dim ds As New DataSet
+	Dim ds As OleDb.OleDataAdapter
+	
+	dbProvider = "PROVIDER=Microsoft.Jet.OLEDB.4.0;"
+	dbSource = "Data Source = dbProvider & dbSource
+	
+	con.ConnectionString = dbProvider & dbSource
+	
+	con.Open()
+	
+	    sql = "SELECT * FROM tblContacts"
+		da = New OleDb.OleDbDataAdapter(sql, con)
+	
+    MsgBox("Database is now open")
+	
+	con.Close()
+	
+	MsgBox("Database is now Closed")
+
+End Sub
+	
+'============================================================================================================
+' It loads the data in the database into the dataset with the use of the dataadapter
+'============================================================================================================
+
+Dim con As New OleDb.OleDbConnection
+Dim dbProvider As String
+Dim dbSource As String
+Dim ds As New DataSet
+Dim da As OleDb.OleDbDataAdapter
+Dim sql As String
+
+dbProvider = "PROVIDER = Microsoft.jet.OLEDB.4.0;"
+dbSource = "Data Source = C:\Users\Elbio\VBA 2010\AddressBook.mdb"
+
+con.ConnectionString = dbProvider & dbSource
+
+con.Open()
+
+sql = "SELECT * FROM tblContacts"
+da = New OleDb.OleDbDataAdapter(sql, con)
+da.Fill(ds, "AddressBook")
+
+MsgBox("Database is now open")
+
+con.Close()
+MsgBox("Database is now closed")
+
+txtFirstName.Text = ds.Tables("AddressBook").Rows(0).Item(1)
+txtSurname.Text = ds.Tables("AddressBook").Rows(0).Item(2)
+
+'===============================================================================================================
+
+
+	

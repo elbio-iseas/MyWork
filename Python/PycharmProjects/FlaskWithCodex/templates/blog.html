@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Welcome to this blog!</h2>
+<p>I'm {{author}}, the author of this only blog.</p>
+
+{% if sunny: %}
+    <p>Today it is sunny.</p>
+{% else %}
+    <p>Today it is rainy.</p>
+{% endif %}
+
+{% for post in posts %}
+    <h2>Title: {{post.title}}</h2>
+    <h2>Author: {{post.author}}</h2>
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

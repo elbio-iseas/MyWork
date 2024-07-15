@@ -1,0 +1,7 @@
+﻿SET IDENTITY_INSERT [dbo].[Rented] ON
+INSERT INTO [dbo].[Rented] ( [RentedID], [RentedDate], [ReturnDate], [ReturnCondition], [InsuranceCo], [InsurancePolicy], [VehicleID], [CustomerID], [Notes] ) VALUES (1, '2016-04-15', '' , 0, 'Allstate', 'C214P8420' , 9,  7, ' ' )
+INSERT INTO [dbo].[Rented] ( [RentedID], [RentedDate], [ReturnDate], [ReturnCondition], [InsuranceCo], [InsurancePolicy], [VehicleID], [CustomerID], [Notes] ) VALUES (2, '2016-04-15', '' , 0, 'Bear River', 'P389Z1429' , 1,  5, ' ' )
+INSERT INTO [dbo].[Rented] ( [RentedID], [RentedDate], [ReturnDate], [ReturnCondition], [InsuranceCo], [InsurancePolicy], [VehicleID], [CustomerID], [Notes] ) VALUES (3, '2016-04-15', '' , 0, 'Liberty', 'L365M109H' , 3,  4, ' ' )
+INSERT INTO [dbo].[Rented] ( [RentedID], [RentedDate], [ReturnDate], [ReturnCondition], [InsuranceCo], [InsurancePolicy], [VehicleID], [CustomerID], [Notes] ) VALUES (4, '2016-04-15', '' , 0, 'Progressive', 'P548Y2431' , 4,  3, ' ' )
+INSERT INTO [dbo].[Rented] ( [RentedID], [RentedDate], [ReturnDate], [ReturnCondition], [InsuranceCo], [InsurancePolicy], [VehicleID], [CustomerID], [Notes] ) VALUES (5, '2016-04-15', '' , 0, 'Farmers', 'F981H734Y' , 5,  2, ' ' )
+INSERT INTO [dbo].[Rented] ( [RentedID], [RentedDate], [ReturnDate], [ReturnCondition], [InsuranceCo], [InsurancePolicy], [VehicleID], [CustomerID], [Notes] ) VALUES (6, '2016-04-15', '' , 0, 'Geico', 'G936E8231' , 8,  6, ' ' )

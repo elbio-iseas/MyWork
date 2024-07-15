@@ -1,0 +1,100 @@
+﻿<PriceHistory>
+  <PriceHistory>
+    <InventoryNum>1</InventoryNum>
+    <Description>Alternator</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>239.95</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>2</InventoryNum>
+    <Description>Starter</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>65.95</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>3</InventoryNum>
+    <Description>Power Steering Pump</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>120.95</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>4</InventoryNum>
+    <Description>Transmission Filter</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>18.50</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>5</InventoryNum>
+    <Description>Air Filter</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>23.69</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>6</InventoryNum>
+    <Description>Fuel Filter</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>25.99</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>7</InventoryNum>
+    <Description>A/C Compressor</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>340.95</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>8</InventoryNum>
+    <Description>A/C Condenser</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>210.64</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>9</InventoryNum>
+    <Description>A/C Dryer</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>34.60</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>10</InventoryNum>
+    <Description>Distributor</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>250.32</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>11</InventoryNum>
+    <Description>Control Module</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>120.35</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>12</InventoryNum>
+    <Description>Oxygen Sensor</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>200.19</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>13</InventoryNum>
+    <Description>Hub Bearing</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>130.95</InventoryPrice>
+  </PriceHistory>
+  <PriceHistory>
+    <InventoryNum>14</InventoryNum>
+    <Description>Lower Control Arm</Description>
+    <DatePreviousPrice>2016-01-04</DatePreviousPrice>
+    <DateCurrentPrice>2016-09-06</DateCurrentPrice>
+    <InventoryPrice>170.22</InventoryPrice>
+  </PriceHistory>
+</PriceHistory>

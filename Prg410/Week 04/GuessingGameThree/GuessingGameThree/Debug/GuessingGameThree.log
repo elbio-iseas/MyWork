@@ -1,0 +1,18 @@
+﻿  stdafx.cpp
+  GuessingGameThree.cpp
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(195): warning C4244: '=': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(239): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(333): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(361): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(370): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(378): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(390): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+c:\users\mandrake\documents\prg410\week 04\guessinggamethree\guessinggamethree\guessinggamethree.cpp(417): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+  GuessingGameThree.vcxproj -> C:\Users\mandrake\Documents\Prg410\Week 04\GuessingGameThree\Debug\GuessingGameThree.exe

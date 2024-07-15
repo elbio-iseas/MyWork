@@ -1,0 +1,4 @@
+Welcome to reading a text file
+with Python when the file is
+in a different directory than
+the current directory.

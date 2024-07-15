@@ -1,0 +1,41 @@
+﻿Build started 11/15/2015 6:48:19 PM.
+     1>Project "C:\Users\mandrake\Documents\Prg410\Week 03\GuessingGameTwo\GuessingGameTwo\GuessingGameTwo.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\GuessingGameTwo.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\GuessingGameTwo.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GuessingGameTwo.cpp
+         GuessingGameTwo.cpp
+     1>c:\users\mandrake\documents\prg410\week 03\guessinggametwo\guessinggametwo\guessinggametwo.cpp(163): warning C4244: '=' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\mandrake\documents\prg410\week 03\guessinggametwo\guessinggametwo\guessinggametwo.cpp(194): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\mandrake\documents\prg410\week 03\guessinggametwo\guessinggametwo\guessinggametwo.cpp(282): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\mandrake\documents\prg410\week 03\guessinggametwo\guessinggametwo\guessinggametwo.cpp(303): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\mandrake\documents\prg410\week 03\guessinggametwo\guessinggametwo\guessinggametwo.cpp(312): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\mandrake\documents\prg410\week 03\guessinggametwo\guessinggametwo\guessinggametwo.cpp(320): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\mandrake\documents\prg410\week 03\guessinggametwo\guessinggametwo\guessinggametwo.cpp(325): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mandrake\Documents\Prg410\Week 03\GuessingGameTwo\Debug\GuessingGameTwo.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\GuessingGameTwo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\mandrake\Documents\Prg410\Week 03\GuessingGameTwo\Debug\GuessingGameTwo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mandrake\Documents\Prg410\Week 03\GuessingGameTwo\Debug\GuessingGameTwo.lib" /MACHINE:X86 Debug\GuessingGameTwo.exe.embed.manifest.res
+         Debug\GuessingGameTwo.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\GuessingGameTwo.exe.embed.manifest" /manifest Debug\GuessingGameTwo.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         GuessingGameTwo.vcxproj -> C:\Users\mandrake\Documents\Prg410\Week 03\GuessingGameTwo\Debug\GuessingGameTwo.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\GuessingGameTwo.unsuccessfulbuild".
+         Touching "Debug\GuessingGameTwo.lastbuildstate".
+     1>Done Building Project "C:\Users\mandrake\Documents\Prg410\Week 03\GuessingGameTwo\GuessingGameTwo\GuessingGameTwo.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.17

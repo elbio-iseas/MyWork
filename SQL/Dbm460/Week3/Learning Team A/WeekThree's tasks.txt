@@ -1,0 +1,22 @@
+This week we have the following tasks:
+
+1) Load the Sales database with the data in the Excel spreadsheet with SQL Server in Toolwire.
+2) Share the database with the teacher for review.
+3) 3 to 4 page draft technical report that outlines:
+   a) advantages and disadvantages of the use of an operational data store,
+      data mart, or enterprise data warehouse (already done by Rob)
+   b) ETL processes description to move the data from Excel of Lafleur to 
+      the Data Warehouse tables.
+   c) Share the ETL processes the team used to Extract Transform Load in the Data Warehouse,
+      with the teacher.
+   d) Create an ad-hoc reporting strategy, a static reporting strategy, a parameter-driven 
+      reporting strategy, and an analysis strategy.
+   e) Data Mining strategy implementation explanation for managing business' operations in Lafleur.
+   
+4) Read the DWH and BI resource document of the requirements for Lafleur Trading Co.
+5) Analyze documentation for Lafleur Sales Application:
+   a) ERD
+   b) Data Dictionary
+   c) Enterprise Sales Data spreadsheet
+	
+6) Submit the assignment after completion.

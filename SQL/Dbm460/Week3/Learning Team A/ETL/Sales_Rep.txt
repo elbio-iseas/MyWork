@@ -1,0 +1,12 @@
+INSERT INTO SALES_REP (Sales_rep_id,Sales_rep_name,Description,Employee_code,Manager_id,Sales_product_id) VALUES
+('1010','Janet Rogers','Fine Foods Expert','115237','1877','101'),
+('1118','William Evans','Wine Consultant','114301','1877','505'),
+('1325','Doris Miller','Wine Consultant','120171','1877','417'),
+('1561','Gary Taylor','Fine Foods Expert','118214','1877','360'),
+('1877','Bernice Lonnigan','Director of Sales','123812','0','226'),
+('2234','Walter Hensley','Senior Marketing Manager','154569','0','101'),
+('3061','Edward Thomas','Exotic Markets','155295','0','417'),
+('3721','Harold Engstrom','Wine Master','155955','2234','101'),
+('4136','Judith Fitzgerald','Specialty Foods Representative','156370','2234','226'),
+('4447','Jason Clark','Foreign Beer Sales','156681','3061','360'),
+('5023','Edith Wainwright','Specialty Foods Representative','157257','2234','505')

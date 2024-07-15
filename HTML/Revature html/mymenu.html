@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    </head>
+    <!--Absolutely positioned element is taken out of the normal flow of the document,
+        it does affect how the elements before it or after it in the HTML are positioned
+    on the webpage.-->
+    <body>
+        <div style="position:relative; height:80px;"> <!-- talks height of division with respect to current-->
+            <img src="images/FatLossMonitor.png"
+                style="position:absolute;
+                       top:0px;
+                       left:0px;
+                       width:200px;
+                       height:100px;
+                       border:none;"
+                alt="logo" />
+        </div>
+<!--Relative starts from where the element would be if it was still in the normal flow.-->
+<!-- List + TOP Menu -->
+        <div id="menu" style="position:absolute; top:120px; left:0px;">
+            <ul type="none"> <!-- circle /disc -->
+                <li><a href="home.html" target="myframe">Home Page</a></li>
+                <li><a href="story.html" target="myframe">About Us</a></li>
+                <li><a href="contact.html" target="myframe">Contact Us</a></li>
+                <li><a href="Register.html" target="myframe">Registration</a></li>
+            </ul>
+        </div>
+        </br>
+        </br>
+        </br>
+        <style>
+        #p01 { text-align: center; color:red;}      
+             h1:last-of-type{
+                background:red;
+             } 
+             p{ text-align:center; color:blue; }
+            .pc01 { text-align: center; color:green;
+            }
+        </style>
+        <h1>Not Just Forward-Thinking-Future-Thinking.</h1>
+        <h1> Copy of H1 </h1>
+
+        <p>At Revature, we don't just see the future of business and technology-we're creating it.</p>
+        <h2>Advancing Talent and Tecnologies.</h2>
+        <p id="p01">Revature empowers businesses around the globe with best-in-class talent and technologies</p>
+        <p clas="pc01">Revature empowers trainees</p>
+        <p class="pc01">Revatue empowers students</p>
+
+    </body>
+</html>

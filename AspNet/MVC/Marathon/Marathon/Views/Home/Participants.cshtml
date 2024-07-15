@@ -1,0 +1,53 @@
+﻿@model List<Marathon.Models.Participant>
+
+@{
+    ViewBag.Title = "Participants";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Marathon Participants</h2>
+
+ @using(Html.BeginForm())
+       { 
+        <table style="width: 1116px">
+            <tr>
+                <th style="width: 9%">
+                    Phone #
+                </th>
+                <th style="width: 236px">
+                    Participant Name
+                </th>
+                <th style="width: 9%">
+                    Date of Birth
+                </th>
+                <th style="width: 463px">
+                    Address
+                </th>
+                <th style="width: 284px">
+                    e-mail address
+                </th>
+                <th style="width: 125px">
+                    Gender
+                </th>
+            </tr>
+            @foreach (var person in Model)
+            { 
+            <tr>
+                <td align="center", style="width: 114px">@person.PhoneNumber.Substring(0,3)-@person.PhoneNumber.Substring(3,3)-@person.PhoneNumber.Substring(6,4)</td>
+                <td style="width: 236px">@person.ParticipantName</td>
+                <td align="center", style="width: 9%">@person.DateOfBirth.ToString("MM/dd/yyyy")</td>
+                <td style="width: 30%">@person.Address</td>
+                <td style="width: 284px">@person.Email</td>
+                <td>@if ((bool)person.Gender)
+                     {
+                      <p>Male</p>
+                     }
+                     else
+                     {
+                      <p>Female</p>
+                     }
+                </td>
+             </tr>
+            } 
+        </table>
+    }
